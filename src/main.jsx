@@ -5,10 +5,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 
 
-import  Home  from './pages/Home';
-import  Movies  from './pages/Movies';
-import  Movie  from './pages/Movie';
+import  Home  from './pages/Home/Home';
+import  Movies  from './pages/Movies/Movies';
+import  Movie  from './pages/Movie/Movie';
 import NotFound from './pages/NotFound';
+import AddMovie from './pages/AddMovie/AddMovie';
 
 
 
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route index element = {<Home />}/>
         <Route path="/movies" element={<Movies />} />
         <Route path="/movie/:id" element={<Movie />} />
+        <Route path="/addMovie" element={<AddMovie />} />
         <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -1,0 +1,36 @@
+.divMovies {
+    justify-content: center;
+}
+
+.h1Movies {
+    justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 30px;
+  color: rgb(14, 13, 13);
+  margin-left: 8em;
+  margin-bottom: 2em;
+}
+
+.ulMovies {
+  display: flex;
+  max-width: 30em;
+  /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+  /* grid-column-gap: 2em;
+  grid-row-gap: 5em;
+  margin-top: 7em;
+  margin-left: 1em;
+  margin-right: 1em;
+  height: 70em; */
+}
+.liMovies {
+  list-style: none;
+  height: 22em;
+  width: 15em;
+  border: 5px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.753);
+}
+
+.imgPoster {
+  width: 300px;
+  height: 400px;
+}

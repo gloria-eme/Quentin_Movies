@@ -1,9 +1,8 @@
+import "./movie.css"
 import React from "react";
-import Poster from "../components/Poster";
-import { getMovie } from "../data";
-import Title from "../components/Title";
+import { getMovie } from "../../data";
 import { useParams, useNavigate } from "react-router-dom";
-import Card from "../components/Card";
+import Card from "../../components/Card";
 
 const Movie = () => {
   const { id } = useParams();

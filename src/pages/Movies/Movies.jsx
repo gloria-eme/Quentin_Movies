@@ -1,19 +1,18 @@
+import "./movies.css"
 import React from "react";
-import Poster from "../components/Poster";
-import { getMovies } from "../data";
-import Title from "../components/Title";
+import Poster from "../../components/Poster";
+import { getMovies } from "../../data";
 import { Link, Outlet } from "react-router-dom";
-import Movie from "./Movie";
 import { useState } from "react";
 
 const Movies = () => {
   const [movies, setMovies] = useState(getMovies());
   return (
-    <>
-      <h1>Películas</h1>
-      <ul>
+    <div className="divMovies">
+      <h1 className="h1Movies">Películas</h1>
+      <ul className="ulMovies">
         {movies.map((movie) => (
-          <li key={movie.id}>
+          <li className="liMovies" key={movie.id}>
             <Link to={`/movie/${movie.id}`}>
               <Poster movie={movie} />
             </Link>
@@ -21,7 +20,7 @@ const Movies = () => {
         ))}
       </ul>
       <Outlet />
-    </>
+    </div>
   );
 };
 

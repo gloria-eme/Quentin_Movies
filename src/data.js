@@ -249,16 +249,16 @@ let movies = [
 
 export const getMovies = () => movies;
 
+export const getMovie = id => movies.find(
+  movie => movie.id.toString() === id
+);
+
+
+
 // export const getMovie = async (id, movieUpdate) => {
-//   getMovie(id) = {id, };
+//   getMovie(id) = {id,...movieUpdate };
 // };
 
-// export const getCast = async (castUpdate) => {
-//   getCast(id) = {id, ...castUpdate}
-// };
-// export const getMovie = id => heroes.find(
-//   heroe => heroe.id.toString() === id
-// );
 
 // export const deleteHeroe = async (id) => heroes = heroes.filter(
 //   heroe => heroe.id !== id

@@ -1,7 +1,7 @@
 import Title from "./Title";
 import Poster from "./Poster";
-// import { getCast } from "../data";
-// import Cast from "./Cast";
+import Cast from "./Cast";
+
 
 
 const Card = ({ movie }) => {
@@ -11,10 +11,7 @@ const Card = ({ movie }) => {
       <Title text={movie.title} />
       <Poster key={movie.id} movie={movie} />
       <p>Año: {movie.year}</p>
-      {/* <div>
-        <p>Reparto: {movie.actors}</p>
-        <Cast/>
-      </div> */}
+     <Cast cast={movie.actors} />
     </section>
   );
 };
